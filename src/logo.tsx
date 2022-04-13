@@ -5,12 +5,12 @@ const TEXT = "Sensory Playhouse";
 const LETTERS = TEXT.split("");
 
 export enum COLORS {
-  red = "#ff5994",
-  orange = "#ff9668",
-  green = "#84ff9f",
+  Red = "#ff5994",
+  Orange = "#ff9668",
+  Green = "#84ff9f",
   // yellow = "#edff8f",
-  blue = "#82b6ff",
-  purple = "#ba55d3"
+  Blue = "#82b6ff",
+  Purple = "#ba55d3",
 }
 
 const COLORS_ARR = Object.values(COLORS);
@@ -19,7 +19,7 @@ const MANY_COLORS = [
   ...COLORS_ARR,
   ...COLORS_ARR,
   ...COLORS_ARR,
-  ...COLORS_ARR
+  ...COLORS_ARR,
 ];
 
 const bounce = keyframes`

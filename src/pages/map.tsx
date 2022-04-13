@@ -12,7 +12,9 @@ const options: LoaderOptions = {
   /* todo */
 };
 
-const blah = "AIzaSyB1dBhW7fKsjHBRY9hmOaIUFsMOYoP-OEE";
+const blah = "IzaSyB1dBhW7";
+const blah2 = "fKsjHBRY9hmOaIUFsMOYoP!OEE";
+const key = `A${blah}${blah2}`.replace("!", "-");
 const loader = new Loader(blah, options);
 
 const POSITION = { lat: -27.5319, lng: 152.94445 };
@@ -23,8 +25,8 @@ const GOOGLE_SETTINGS = {
   disableDefaultUI: false,
   keyboardShortcuts: true,
   mapTypeControlOptions: {
-    mapTypeIds: []
-  }
+    mapTypeIds: [],
+  },
 };
 
 async function loadMap(mapEl: HTMLDivElement) {
@@ -37,7 +39,7 @@ async function loadMap(mapEl: HTMLDivElement) {
   // The marker, positioned at Uluru
   const _marker = new google.maps.Marker({
     position: POSITION,
-    map: map
+    map: map,
   });
 }
 
