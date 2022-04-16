@@ -13,7 +13,7 @@ body {
 .App {
   font-family: Roboto Mono;
   text-align: center;
-  background: #82b6ff url("wood.jpg") no-repeat fixed top;
+  background: #82b6ff url("images/wood.jpg") no-repeat fixed top;
   /* background-size: auto 100%; */
   /* background-size: auto 100%; */
   background-size: auto 100%;

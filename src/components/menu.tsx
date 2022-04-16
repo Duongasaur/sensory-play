@@ -43,7 +43,7 @@ export const Menu = () => {
     <DivRelative>
       <DivMenu>
         {ITEMS.map((name) => (
-          <MenuItem name={name} />
+          <MenuItem key={name} name={name} />
         ))}
       </DivMenu>
     </DivRelative>

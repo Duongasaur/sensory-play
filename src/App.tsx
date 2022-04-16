@@ -6,6 +6,9 @@ import { Square } from "./components/square";
 import { Menu } from "./components/menu";
 import { Gap } from "./components/gap";
 
+import square1 from "./images/square1.jpeg";
+import square2 from "./images/square2.jpeg";
+
 import "./styles.css";
 import styled from "styled-components";
 import { useEffect, useRef, useState } from "react";
@@ -75,14 +78,14 @@ export default function App() {
         <Square
           id="about"
           title={SQUARE_1_TITLE}
-          bg="/square1.jpeg"
+          bg={square1}
           text={SQUARE_1_TXT}
         />
         <Gap />
         <Square
           id="activities"
           title={SQUARE_2_TITLE}
-          bg="/square2.jpeg"
+          bg={square2}
           text={SQUARE_2_TXT}
         />
         <Classes />
