@@ -12,6 +12,7 @@ import square2 from "./images/square2.jpeg";
 import "./styles.css";
 import styled from "styled-components";
 import { useEffect, useRef, useState } from "react";
+import { Zag } from "./components/zag";
 
 const DivLoader = styled.div`
   position: fixed;
@@ -54,21 +55,6 @@ const Loader = () => {
   );
 };
 
-const DivGrid = styled.div`
-  display: grid;
-  grid-row-gap: 0rem;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(auto, 1fr);
-  div:nth-of-type(4n) {
-    grid-column: 2;
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
 const SQUARE_1_TITLE = "About us";
 const SQUARE_1_TXT =
   "We are a fun play center for your child to explore and learn";
@@ -82,7 +68,7 @@ export default function App() {
       <Logo showBackground={true}>
         <Menu />
       </Logo>
-      <DivGrid>
+      <Zag>
         <Square
           id="about"
           title={SQUARE_1_TITLE}
@@ -90,8 +76,6 @@ export default function App() {
           text={SQUARE_1_TXT}
         />
         <Gap />
-      </DivGrid>
-      <DivGrid>
         <Square
           id="activities"
           title={SQUARE_2_TITLE}
@@ -99,7 +83,7 @@ export default function App() {
           text={SQUARE_2_TXT}
         />
         <div />
-      </DivGrid>
+      </Zag>
       <Classes />
       <Booking />
       <Map />
