@@ -4,6 +4,11 @@ body {
   scroll-behavior: smooth;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 @media (max-width: 600px) {
   .App {
     background-size: auto 100%;

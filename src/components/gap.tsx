@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DivGap = styled.div`
   position: relative;
-  height: 12rem;
+  min-height: 12rem;
 `;
 
 const DivContent = styled.div`

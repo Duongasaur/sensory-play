@@ -58,7 +58,15 @@ const DivGrid = styled.div`
   display: grid;
   grid-row-gap: 0rem;
   justify-content: center;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto, 1fr);
+  div:nth-of-type(4n) {
+    grid-column: 2;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const SQUARE_1_TITLE = "About us";
@@ -82,16 +90,19 @@ export default function App() {
           text={SQUARE_1_TXT}
         />
         <Gap />
+      </DivGrid>
+      <DivGrid>
         <Square
           id="activities"
           title={SQUARE_2_TITLE}
           bg={square2}
           text={SQUARE_2_TXT}
         />
-        <Classes />
-        <Booking />
-        <Map />
+        <div />
       </DivGrid>
+      <Classes />
+      <Booking />
+      <Map />
       <Loader />
     </div>
   );
