@@ -1,0 +1,22 @@
+{
+  "about": {
+    "photo": {
+      "title": "",
+      "text": "We are a fun play center for your child to explore and learn"
+    },
+    "block": {
+      "title": "... what we do",
+      "text": "We believe in the importance of your childs education and exploration. While having safe guidance of a relative during activities. We have created a sensory wonderland you and bub."
+    }
+  },
+  "activities": {
+    "photo": {
+      "title": "Activities",
+      "text": "We have painting, music and dancing"
+    },
+    "block": {
+      "title": "Sessions include",
+      "text": "Music Session, art and craft, special events"
+    }
+  }
+}

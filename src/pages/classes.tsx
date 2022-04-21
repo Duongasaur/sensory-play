@@ -4,6 +4,7 @@ import { Box } from "../components/box";
 
 const Frame = styled.iframe`
   border-width: 0;
+  margin-top: 1rem;
   max-width: 100%;
   max-height: 100vw;
 `;
