@@ -48,8 +48,10 @@ async function loadMap(mapEl: HTMLDivElement) {
 
 const DivMap = styled.div`
   /* margin-top: 1rem; */
-  width: 100%;
   height: 200px;
+  border: 8px solid #282a35;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
   filter: hue-rotate(290deg) saturate(0.9);
 `;
 

@@ -8,7 +8,7 @@ const DivBox = styled.div`
 
 const DivWrapper = styled.div`
   position: relative;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   padding-top: 0.1rem;
 `;
 

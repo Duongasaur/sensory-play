@@ -14,7 +14,7 @@ const BaseGrid = styled.div`
 const GridSimple = styled.div`
   display: grid;
   grid-row-gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
 `;
 
 const DivGrid = styled(BaseGrid)<{ isEven: boolean }>`
