@@ -13,6 +13,7 @@ export const Classes = () => {
   return (
     <Box>
       <Frame
+        id="show"
         src="https://popsicle.app/schools/public/classes/calendar?schoolId=3475"
         width="800px"
         height="822px"

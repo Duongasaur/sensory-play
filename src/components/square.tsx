@@ -8,6 +8,7 @@ const DivSquare = styled.div<{ background: string }>`
   display: flex;
   align-items: flex-start;
   justify-content: end;
+  border-radius: 2px;
 
   color: white;
   font-weight: bold;

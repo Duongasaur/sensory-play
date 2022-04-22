@@ -22,7 +22,7 @@ const MAP_POSITION = { lat: -27.5315, lng: 152.9455 };
 const MARKER_POSITION = { lat: -27.5319, lng: 152.94445 };
 
 const GOOGLE_SETTINGS = {
-  zoom: 16,
+  zoom: 15,
   center: MAP_POSITION,
   disableDefaultUI: false,
   keyboardShortcuts: true,
@@ -58,6 +58,8 @@ const DivContact = styled.div`
   padding: 20px;
   background-color: #282a35;
   color: white;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 `;
 

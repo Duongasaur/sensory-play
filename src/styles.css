@@ -26,6 +26,13 @@ button {
   overflow: auto;
 }
 
+iframe {
+  /* display: none; */
+}
+iframe#show {
+  display: block;
+}
+
 h2,
 h3 {
   margin: 0.4rem 0;
@@ -45,4 +52,10 @@ h3 {
 .gmnoprint a,
 .gmnoprint span {
   display: none;
+}
+
+/*======= Embed Social ============*/
+#es-header {
+  margin-top: 10px;
+  
 }
