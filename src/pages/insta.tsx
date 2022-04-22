@@ -10,6 +10,7 @@ export const Insta = () => {
 
   return (
     <div
+      id="news"
       className="embedsocial-hashtag"
       data-ref="81b93ea323ec5e4d7ea7b91b55775b1be8c612bc"
     />
