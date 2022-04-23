@@ -6,7 +6,7 @@ const Frame = styled.iframe`
   border-width: 0;
   margin-top: 1rem;
   max-width: 100%;
-  max-height: 100vw;
+  max-height: max(500px, 100vw);
 `;
 
 export const Classes = () => {
@@ -16,7 +16,7 @@ export const Classes = () => {
         id="show"
         src="https://popsicle.app/schools/public/classes/calendar?schoolId=3475"
         width="800px"
-        height="822px"
+        height="844px"
       />
     </Box>
   );

@@ -12,11 +12,11 @@
   "activities": {
     "photo": {
       "title": "Activities",
-      "text": "We have painting, music and dancing"
+      "text": "Join us for a wide range of weekly activities"
     },
     "block": {
       "title": "Sessions include",
-      "text": "Music Session, art and craft, special events"
+      "text": "Music Session ⋄ \n Art and craft ⋄ \n Special events ⋄"
     }
   }
 }

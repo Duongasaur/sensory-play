@@ -37,7 +37,9 @@ export const Zag = ({ children }: Props) => {
   return (
     <GridSimple>
       {zigs.map((zig: ReactNode[], index) => (
-        <DivGrid isEven={isEven(index)}>{zig}</DivGrid>
+        <DivGrid key={index} isEven={isEven(index)}>
+          {zig}
+        </DivGrid>
       ))}
     </GridSimple>
   );

@@ -8,6 +8,7 @@ export const DivGap = styled.div`
 const DivContent = styled.div`
   position: relative;
   color: #3e4152;
+  white-space: pre-line;
 `;
 
 interface Props {
