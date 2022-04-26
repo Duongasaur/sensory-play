@@ -96,8 +96,9 @@ const ContactCard = () => {
     if (navigator.share) {
       navigator
         .share({
-          title: "WebShare API Demo",
-          url: "MAP_URL",
+          title: "Sensory Playhouse",
+          text: "Checkout our site sensoryplayhouse.com.au \n or come find us at Shop 17C, 235 Sinnamon Rd Jindalee 4074 QLD",
+          url: MAP_URL,
         })
         .then(() => {
           // console.log("Thanks for sharing!");
