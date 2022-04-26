@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { Loader, LoaderOptions } from "google-maps";
 import pin from "../images/pin.png";
+import share from "../images/share.svg";
 
 import { Box } from "../components/box";
 
@@ -56,34 +57,68 @@ const DivMap = styled.div`
 `;
 
 const DivContact = styled.div`
+  position: relative;
   display: grid;
   padding: 20px;
   background-color: #282a35;
   color: white;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 2rem);
+  line-height: 2rem;
+`;
+
+const ContactLink = styled.a`
+  color: #82b6ff;
 `;
 
 const Icon = styled.div`
   display: inline-block;
   font-size: 2rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
   vertical-align: top;
+  color: white;
 `;
 
+const ShareButton = styled.a`
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: 1rem;
+  top: 1rem;
+  background: center center url(${share}) no-repeat;
+  filter: invert(100%);
+`;
+
+const MAP_URL = "https://maps.app.goo.gl/ZpgEQxskUjy8VQDo8";
 const ContactCard = () => {
+  const onShare = () => {
+    if (navigator.share) {
+      navigator
+        .share({
+          title: "WebShare API Demo",
+          url: "MAP_URL",
+        })
+        .then(() => {
+          // console.log("Thanks for sharing!");
+        })
+        .catch(console.error);
+    }
+  };
   return (
-    <DivContact>
-      <span>
+    <DivContact id="contact">
+      <ShareButton onClick={onShare} />
+      <ContactLink href="tel:33-4455-6677">
         <Icon>✆</Icon> 33 4455 6677
-      </span>
-      <span>
+      </ContactLink>
+      <ContactLink href="mailto:info@sensoryplayhouse.com.au">
         <Icon>✉</Icon> info@sensoryplayhouse.com.au
-      </span>
+      </ContactLink>
       <span />
-      <span>Shop 17C, 235 Sinnamon Rd</span>
-      <span>Jindalee 4077 QLD</span>
+      <a target="_blank" href={MAP_URL}>
+        <span>Shop 17C, 235 Sinnamon Rd</span>
+        <span>Jindalee 4074 QLD</span>
+      </a>
     </DivContact>
   );
 };

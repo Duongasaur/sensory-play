@@ -26,11 +26,14 @@ button {
   overflow: auto;
 }
 
-iframe {
-  /* display: none; */
+a {
+    text-decoration: none;
 }
-iframe#show {
-  display: block;
+
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
 }
 
 h2,
