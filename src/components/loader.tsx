@@ -14,7 +14,7 @@ const DivLoader = styled.div`
   display: flex;
   justify-content: center;
   transition: opacity 1s ease-in-out 2s;
-  padding-top: calc(50vh - 6rem);
+  flex-direction: column;
 `;
 
 export const Loader = () => {
@@ -40,6 +40,7 @@ export const Loader = () => {
   return (
     <DivLoader ref={ref}>
       <Logo showBackground={false} />
+      {/* <Iframe src="https://embed.lottiefiles.com/animation/91858" /> */}
     </DivLoader>
   );
 };

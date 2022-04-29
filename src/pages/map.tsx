@@ -117,7 +117,8 @@ const ContactCard = () => {
       </ContactLink>
       <span />
       <a target="_blank" href={MAP_URL}>
-        <span>Shop 17C, 235 Sinnamon Rd</span>
+        <span>Shop 17C, 235 Sinnamon Rd,</span>
+        <br />
         <span>Jindalee 4074 QLD</span>
       </a>
     </DivContact>
